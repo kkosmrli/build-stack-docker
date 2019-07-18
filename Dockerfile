@@ -7,6 +7,8 @@ RUN apk --no-cache add ca-certificates \
 	&& wget https://github.com/sgerrand/alpine-pkg-git-crypt/releases/download/0.6.0-r1/git-crypt-0.6.0-r1.apk \
 	&& apk add git-crypt-0.6.0-r1.apk
 
+RUN apk add --no-cache bash
+
 ENV OS_CLI_VERSION v3.11.0
 ENV OS_TAG 0cbc58b
 
